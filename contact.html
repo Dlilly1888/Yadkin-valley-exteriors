@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Get a Free Estimate | Yadkin Valley Exteriors</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="top-bar">
+    CALL TODAY: <a href="tel:3360000000">336-XXX-XXXX</a>
+  </div>
+
+  <header>
+    <nav>
+      <div class="logo-text">Yadkin Valley <span>EXTERIORS</span></div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="roofing.html">Roofing</a></li>
+        <li><a href="gutters.html">Gutters</a></li>
+        <li><a href="windows.html">Windows</a></li>
+        <li><a href="contact.html" class="active nav-btn">Get Free Estimate</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="container" style="max-width: 700px;">
+    <h2 class="section-title">Get Your Free Estimate</h2>
+    
+    <form action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="John Doe">
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required placeholder="(336) 000-0000">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="name@example.com">
+      </div>
+
+      <div class="form-group">
+        <label for="service">Service Needed</label>
+        <select id="service" name="service" required>
+          <option value="">-- Select a Service --</option>
+          <option value="roofing">Roofing</option>
+          <option value="gutters">Gutters</option>
+          <option value="windows">Windows</option>
+          <option value="storm">Storm Restoration</option>
+          <option value="commercial">Commercial Services</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Project Details</label>
+        <textarea id="message" name="message" rows="5" placeholder="Tell us about your project..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer;">Submit Request</button>
+    </form>
+  </section>
+
+  <footer>
+    <div class="copyright">&copy; Yadkin Valley Exteriors. All rights reserved.</div>
+  </footer>
+
+</body>
+</html>

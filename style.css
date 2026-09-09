@@ -1,0 +1,304 @@
+/* Custom CSS Variables for Yadkin Valley Exteriors Branding */
+:root {
+  --primary-red: #d90429;
+  --dark-red: #9e0018;
+  --black: #111111;
+  --dark-gray: #222222;
+  --medium-gray: #444444;
+  --light-gray: #f4f4f4;
+  --white: #ffffff;
+  --font-main: 'Montserrat', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-main);
+  color: var(--black);
+  background-color: var(--white);
+  line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+  background-color: var(--black);
+  border-bottom: 4px solid var(--primary-red);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.top-bar {
+  background-color: var(--primary-red);
+  color: var(--white);
+  text-align: center;
+  padding: 8px 15px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+.top-bar a {
+  color: var(--white);
+  text-decoration: underline;
+  margin-left: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 15px 20px;
+}
+
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.logo-text span {
+  color: var(--primary-red);
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  margin-top: -5px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+nav a:hover, nav a.active {
+  color: var(--primary-red);
+}
+
+.nav-btn {
+  background-color: var(--primary-red);
+  color: var(--white) !important;
+  padding: 10px 18px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.nav-btn:hover {
+  background-color: var(--dark-red);
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat;
+  color: var(--white);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.hero p.tagline {
+  font-size: 1.5rem;
+  color: var(--primary-red);
+  font-weight: 800;
+  font-style: italic;
+  margin-bottom: 25px;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--primary-red);
+  color: var(--white);
+  padding: 15px 35px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  text-decoration: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--dark-red);
+}
+
+/* Layout Containers */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.section-title::after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: var(--primary-red);
+  margin: 10px auto 0;
+}
+
+/* Grid Cards (Services & Features) */
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: var(--light-gray);
+  border-top: 5px solid var(--primary-red);
+  padding: 30px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: var(--medium-gray);
+  margin-bottom: 20px;
+}
+
+/* Features Band */
+.features-band {
+  background-color: var(--black);
+  color: var(--white);
+  padding: 50px 20px;
+}
+
+.feature-item {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.feature-item span {
+  display: block;
+  color: var(--primary-red);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+/* Local Area Banner */
+.service-area {
+  background-color: var(--dark-gray);
+  color: var(--white);
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.service-area h2 {
+  color: var(--primary-red);
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--black);
+  color: var(--white);
+  border-top: 4px solid var(--primary-red);
+  padding: 40px 20px 20px;
+  text-align: center;
+}
+
+.footer-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto 30px;
+  gap: 20px;
+  text-align: left;
+}
+
+.footer-col h4 {
+  color: var(--primary-red);
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.quote-verse {
+  font-style: italic;
+  margin-top: 20px;
+  color: #aaa;
+}
+
+.copyright {
+  border-top: 1px solid var(--medium-gray);
+  padding-top: 20px;
+  font-size: 0.85rem;
+  color: #888;
+}
+
+/* Form Styles */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+}
+
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+  border-color: var(--primary-red);
+  outline: none;
+}

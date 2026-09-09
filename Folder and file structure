@@ -1,0 +1,7 @@
+my-website/
+├── index.html        (Home Page)
+├── roofing.html      (Roofing Services)
+├── gutters.html      (Gutters Services)
+├── windows.html      (Windows Services)
+├── contact.html      (Free Estimate / Contact Page)
+└── style.css         (Shared Stylesheet)
